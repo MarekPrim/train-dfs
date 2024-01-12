@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+    <org.eventb.core.scCarrierSet name="TRAINS" org.eventb.core.source="/GestionFerroviaire/Context_TS_0.buc|org.eventb.core.contextFile#Context_TS_0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(TRAINS)"/>
+    <org.eventb.core.scCarrierSet name="TRONCONS" org.eventb.core.source="/GestionFerroviaire/Context_TS_0.buc|org.eventb.core.contextFile#Context_TS_0|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(TRONCONS)"/>
+</org.eventb.core.scContextFile>

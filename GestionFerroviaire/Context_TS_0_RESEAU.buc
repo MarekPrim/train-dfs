@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+    <org.eventb.core.extendsContext name="'" org.eventb.core.target="Context_TS_0"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="(" org.eventb.core.identifier="tronconVoisins"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=")" org.eventb.core.identifier="t1"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="*" org.eventb.core.identifier="t2"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="+" org.eventb.core.identifier="t3"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="," org.eventb.core.identifier="t4"/>
+    <org.eventb.core.axiom name="-" org.eventb.core.label="TYPE_tronconVoisins" org.eventb.core.predicate="tronconVoisins ∈ TRONCONS ↔ TRONCONS"/>
+    <org.eventb.core.axiom name="." org.eventb.core.label="VAL_TRONCONS" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})"/>
+    <org.eventb.core.axiom name="/" org.eventb.core.label="VAL_tronconVoisins" org.eventb.core.predicate="tronconVoisins = {t1 ↦ t2, t2 ↦ t1, t2 ↦ t3, t3 ↦ t2, t3 ↦ t4, t4 ↦ t3, t1 ↦ t4, t4 ↦ t1}"/>
+</org.eventb.core.contextFile>

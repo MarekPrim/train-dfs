@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="trainSurTroncons :∣ ∀t, tra · t ∈ TRONCONS ∧ tra ∈ TRAINS ∧ card(trainSurTroncons'∼[{t}]) &lt; 2 ∧ card(trainSurTroncons'[{tra}]) = 1" org.eventb.core.label="INIT_trainSurTroncons"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name=")" org.eventb.core.comment="SAF-TS-0-2 est vérifiée par définition (Relation totale)" org.eventb.core.label="TYPE_trainSurTroncons" org.eventb.core.predicate="trainSurTroncons ∈ TRAINS  TRONCONS"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="trainSurTroncons"/>
+    <org.eventb.core.invariant name="1" org.eventb.core.label="TYPE_trainSurTroncons∼" org.eventb.core.predicate="trainSurTroncons∼ ∈ TRONCONS ⤀ TRAINS"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.label="SAF−TS−0−1" org.eventb.core.predicate="∀t · t ∈ TRONCONS ⇒ card(trainSurTroncons∼[{t}]) &lt; 2"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="SAF−TS−0−4" org.eventb.core.predicate="∀tra · tra ∈ TRAINS ⇒ card(trainSurTroncons[{tra}]) ≤ 2"/>
+    <org.eventb.core.invariant name="/" org.eventb.core.label="SAF−TS−0−5" org.eventb.core.predicate="∀tra,tro,trop · tra ∈ TRAINS ∧ tro ∈ TRONCONS ∧ trop ∈ TRONCONS ∧ tro ≠ trop ∧ tro ∈ trainSurTroncons[{tra}] ∧ trop ∈ trainSurTroncons[{tra}] ⇒ tro ∈ tronconVoisins[{trop}] ∧ trop ∈ tronconVoisins[{tro}]"/>
+    <org.eventb.core.seesContext name="3" org.eventb.core.target="Context_TS_0_RESEAU"/>
+    <org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ENTRER">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="train"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="troncon"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="TYPE_train" org.eventb.core.predicate="train ∈ TRAINS"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="TYPE_troncon" org.eventb.core.predicate="troncon ∈ TRONCONS"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd_train_sur_un_seul_troncon" org.eventb.core.predicate="card(trainSurTroncons[{train}]) = 1"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="SAF−TS−0−1" org.eventb.core.predicate="∀tra · tra ∈ TRAINS ∧ card(trainSurTroncons∼[{troncon}]) = 0"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="SAF−TS−0−3" org.eventb.core.predicate="troncon ∈ tronconVoisins[trainSurTroncons[{train}]]"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="trainSurTroncons ≔ trainSurTroncons  ∪ {train ↦ troncon}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ARRIVER">
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="train"/>
+        <org.eventb.core.parameter name="," org.eventb.core.identifier="troncon"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="TYPE_train" org.eventb.core.predicate="train ∈ TRAINS"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="TYPE_troncon" org.eventb.core.predicate="troncon ∈ TRONCONS"/>
+        <org.eventb.core.guard name="grd3" org.eventb.core.label="grd_train_sur_deux_troncons" org.eventb.core.predicate="card(trainSurTroncons[{train}]) = 2"/>
+        <org.eventb.core.guard name="grd4" org.eventb.core.label="grd_train_sur_troncon" org.eventb.core.predicate="troncon ∈ trainSurTroncons[{train}]"/>
+        <org.eventb.core.action name="grd5" org.eventb.core.assignment="trainSurTroncons ≔ trainSurTroncons{train ↦ troncon}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

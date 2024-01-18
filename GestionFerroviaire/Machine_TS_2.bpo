@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="8">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+        <org.eventb.core.poIdentifier name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="t1" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="t2" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="t3" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="t4" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poPredicate name="tronconVoisint" org.eventb.core.predicate="tronconVoisins∈TRONCONS ↔ TRONCONS" org.eventb.core.source="/GestionFerroviaire/Context_TS_0_RESEAU.buc|org.eventb.core.contextFile#Context_TS_0_RESEAU|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="tronconVoisinu" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})" org.eventb.core.source="/GestionFerroviaire/Context_TS_0_RESEAU.buc|org.eventb.core.contextFile#Context_TS_0_RESEAU|org.eventb.core.axiom#."/>
+        <org.eventb.core.poPredicate name="tronconVoisinv" org.eventb.core.predicate="tronconVoisins={t1 ↦ t2,t2 ↦ t1,t2 ↦ t3,t3 ↦ t2,t3 ↦ t4,t4 ↦ t3,t1 ↦ t4,t4 ↦ t1}" org.eventb.core.source="/GestionFerroviaire/Context_TS_0_RESEAU.buc|org.eventb.core.contextFile#Context_TS_0_RESEAU|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poIdentifier name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+        <org.eventb.core.poIdentifier name="tronconsArrets" org.eventb.core.type="ℙ(ARRETS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="a1" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.poIdentifier name="a2" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.poPredicate name="tronconsArrett" org.eventb.core.predicate="tronconsArrets∈ARRETS ↔ TRONCONS" org.eventb.core.source="/GestionFerroviaire/Context_TS_1_RESEAU.buc|org.eventb.core.contextFile#Context_TS_1_RESEAU|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="tronconsArretu" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})" org.eventb.core.source="/GestionFerroviaire/Context_TS_1_RESEAU.buc|org.eventb.core.contextFile#Context_TS_1_RESEAU|org.eventb.core.axiom#,"/>
+        <org.eventb.core.poPredicate name="tronconsArretv" org.eventb.core.predicate="tronconsArrets={a1 ↦ t1,a1 ↦ t2,a2 ↦ t3,a2 ↦ t4}" org.eventb.core.source="/GestionFerroviaire/Context_TS_1_RESEAU.buc|org.eventb.core.contextFile#Context_TS_1_RESEAU|org.eventb.core.axiom#-"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="routeTrains" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="destinationTrains" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+        <org.eventb.core.poPredicate name="destinationTraint" org.eventb.core.predicate="trainSurTroncons∈TRAINS  TRONCONS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poPredicate name="destinationTrainu" org.eventb.core.predicate="trainSurTroncons∼∈TRONCONS ⤀ TRAINS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poPredicate name="destinationTrainv" org.eventb.core.predicate="∀t⦂TRONCONS·t∈TRONCONS⇒card(trainSurTroncons∼[{t}])&lt;2" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poPredicate name="destinationTrainw" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(trainSurTroncons[{tra}])≤2" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poPredicate name="destinationTrainx" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧tro≠trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poPredicate name="destinationTrainy" org.eventb.core.predicate="destinationTrains∈TRAINS ↔ ARRETS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.invariant#*"/>
+        <org.eventb.core.poPredicate name="destinationTrainz" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(destinationTrains[{tra}])≤1" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.invariant#+"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTContext_TS_1_RESEAZ" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="trainSurTroncons'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="routeTrains'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="destinationTrains'" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPContext_TS_1_RESEAZ" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTIDENTContext_TS_1_RESEAZ" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTContext_TS_1_RESEA[" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="troncon" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="trainSurTroncons'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAINS"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPContext_TS_1_RESEA[" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTIDENTContext_TS_1_RESEA[" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train∈TRAINS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#4|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="troncon∈TRONCONS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#4|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(trainSurTroncons[{train}])=1" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#4|org.eventb.core.guard#,"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS∧card(trainSurTroncons∼[{troncon}])=0" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#4|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="troncon∈tronconVoisins[trainSurTroncons[{train}]]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#4|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="trainSurTroncons[{train}]⊆routeTrains[{train}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#+|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="troncon∈routeTrains[{train}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#+|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTContext_TS_1_RESEA\" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poIdentifier name="troncon" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="trainSurTroncons'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAINS"/>
+        <org.eventb.core.poIdentifier name="routeTrains'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPContext_TS_1_RESEA\" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTIDENTContext_TS_1_RESEA\\" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train∈TRAINS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#5|org.eventb.core.guard#grd1"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="troncon∈TRONCONS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#5|org.eventb.core.guard#grd2"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(trainSurTroncons[{train}])=2" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#5|org.eventb.core.guard#grd3"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="troncon∈trainSurTroncons[{train}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_0.bum|org.eventb.core.machineFile#Machine_TS_0|org.eventb.core.event#5|org.eventb.core.guard#grd4"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTContext_TS_1_RESEA]" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="arret" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAINS"/>
+        <org.eventb.core.poIdentifier name="destinationTrains'" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPContext_TS_1_RESEA]" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTIDENTContext_TS_1_RESEA]" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train∈TRAINS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#,|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="arret∈ARRETS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#,|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(destinationTrains[{train}])=0" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#,|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="TERMINER/act_suppression_route/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTALLHYPContext_TS_1_RESEA^"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="train∈dom(routeTrains)" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#.|org.eventb.core.action#("/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#.|org.eventb.core.action#("/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTALLHYPContext_TS_1_RESEA^"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTContext_TS_1_RESEA^" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="4">
+        <org.eventb.core.poIdentifier name="arretCourrant" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.poIdentifier name="nouvelArret" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAINS"/>
+        <org.eventb.core.poIdentifier name="routeTrains'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="destinationTrains'" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPContext_TS_1_RESEA^" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTIDENTContext_TS_1_RESEA^" org.eventb.core.poStamp="4">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train∈TRAINS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="arretCourrant∈ARRETS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#-|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="nouvelArret∈ARRETS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#-|org.eventb.core.guard#0"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="card(trainSurTroncons[{train}])=1" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#-|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="arretCourrant∈destinationTrains[{train}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#-|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="trainSurTroncons[{train}]⊆tronconsArrets[{arretCourrant}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#-|org.eventb.core.guard#,"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="arretCourrant≠nouvelArret" org.eventb.core.source="/GestionFerroviaire/Machine_TS_1.bum|org.eventb.core.machineFile#Machine_TS_1|org.eventb.core.event#-|org.eventb.core.guard#1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTContext_TS_1_RESEA_" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="7">
+        <org.eventb.core.poIdentifier name="troncon" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAINS"/>
+        <org.eventb.core.poIdentifier name="routeTrains'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPContext_TS_1_RESEA_" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTIDENTContext_TS_1_RESEA_" org.eventb.core.poStamp="7">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train∈TRAINS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#(|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="troncon∈TRONCONS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#(|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="troncon∈trainSurTroncons[{train}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#(|org.eventb.core.guard#,"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="troncon∉routeTrains[{train}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#(|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="UPDATE_ROUTE/grd_route_creee/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTHYPContext_TS_1_RESEA`*"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(routeTrains[{train}])" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#)|org.eventb.core.guard#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#)|org.eventb.core.guard#-"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTHYPContext_TS_1_RESEA`*"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTContext_TS_1_RESEA`" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="troncon" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAINS"/>
+        <org.eventb.core.poIdentifier name="routeTrains'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPContext_TS_1_RESEA`*" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTIDENTContext_TS_1_RESEA`" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train∈TRAINS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#)|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="troncon∈TRONCONS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#)|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∃t⦂TRONCONS·t∈TRONCONS∧troncon≠t∧t∈routeTrains[{train}]⇒troncon∈tronconVoisins[{t}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#)|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="troncon∉routeTrains[{train}]" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#)|org.eventb.core.guard#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPContext_TS_1_RESEA`" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#EVTHYPContext_TS_1_RESEA`*" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="card(routeTrains[{train}])≥1" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.event#)|org.eventb.core.guard#-"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/GestionFerroviaire/Machine_TS_2.bpo|org.eventb.core.poFile#Machine_TS_2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="routeTrains∈TRAINS ↔ TRONCONS" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="⊤" org.eventb.core.source="/GestionFerroviaire/Machine_TS_2.bum|org.eventb.core.machineFile#Machine_TS_2|org.eventb.core.invariant#5"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

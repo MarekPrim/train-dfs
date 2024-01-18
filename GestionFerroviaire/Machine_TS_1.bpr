@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="SAF−TS−1−1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="tra" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="ARRETS,TRAINS,TRONCONS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRONCONS,{t1},{t2},{t3},{t4}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ARRETS,{a1},{a2}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18,p19"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p18,p19"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p26">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p21"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p22"/>
+                                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p26" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p30">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+                                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees tra)" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+                                                        <org.eventb.core.prIdent name="tra" org.eventb.core.type="TRAINS"/>
+                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="p8,p7,p9,p4,p1,p11,p12,p13,p14,p15,p16,p17,p18,p19,p27,p28,p29">
+                                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="destinationTrains" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+        <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        <org.eventb.core.prIdent name="tronconsArrets" org.eventb.core.type="ℙ(ARRETS×TRONCONS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="destinationTrains∈TRAINS ⇸ ARRETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧tro≠trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀t⦂TRONCONS·card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬a1=a2"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="TRONCONS={t1,t2,t3,t4}"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀tra⦂TRAINS·finite(destinationTrains[{tra}])"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="ARRETS={a1,a2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="trainSurTroncons∼∈TRONCONS ⤀ TRAINS"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀tra⦂TRAINS·card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀t⦂TRONCONS·t∈TRONCONS⇒card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="tronconsArrets={a1 ↦ t1,a1 ↦ t2,a2 ↦ t3,a2 ↦ t4}"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="tronconVoisins={t1 ↦ t2,t2 ↦ t1,t2 ↦ t3,t3 ↦ t2,t3 ↦ t4,t4 ↦ t3,t1 ↦ t4,t4 ↦ t1}"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·⊤∧⊤∧⊤∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬t1=t3"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="finite(destinationTrains[{tra}])">
+            <org.eventb.core.prIdent name="tra" org.eventb.core.type="TRAINS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬t1=t2"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬t2=t3"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="tronconVoisins∈TRONCONS ↔ TRONCONS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="trainSurTroncons∈TRAINS  TRONCONS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒finite(destinationTrains[{tra}])"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬t1=t4"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒finite(destinationTrains[{tra}])"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="tronconsArrets∈ARRETS ↔ TRONCONS"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀t⦂TRONCONS·⊤⇒card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬t2=t4"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬t3=t4"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DESTINER/grd_train_sans_destination/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="ARRETS,TRAINS,TRONCONS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRONCONS,{t1},{t2},{t3},{t4}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15,p16,p17,p18"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15,p16,p17,p18"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ARRETS,{a1},{a2}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19,p20"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p19,p20"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p22"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p27"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p28"/>
+                                        <org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+                                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
+                                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p8,p10,p4,p1,p12,p13,p14,p15,p16,p17,p18,p19,p20,p30,p31,p32,p33">
+                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="destinationTrains" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+        <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="train" org.eventb.core.type="TRAINS"/>
+        <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        <org.eventb.core.prIdent name="tronconsArrets" org.eventb.core.type="ℙ(ARRETS×TRONCONS)"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="train∈TRAINS"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀tra⦂TRAINS·card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="destinationTrains∈TRAINS ⇸ ARRETS"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="arret∈ARRETS">
+            <org.eventb.core.prIdent name="arret" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧tro≠trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀t⦂TRONCONS·card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="finite(destinationTrains[{train}])"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬a1=a2"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="TRONCONS={t1,t2,t3,t4}"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="ARRETS={a1,a2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="trainSurTroncons∼∈TRONCONS ⤀ TRAINS"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀tra⦂TRAINS·card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀t⦂TRONCONS·t∈TRONCONS⇒card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="tronconsArrets={a1 ↦ t1,a1 ↦ t2,a2 ↦ t3,a2 ↦ t4}"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="tronconVoisins={t1 ↦ t2,t2 ↦ t1,t2 ↦ t3,t3 ↦ t2,t3 ↦ t4,t4 ↦ t3,t1 ↦ t4,t4 ↦ t1}"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·⊤∧⊤∧⊤∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬t1=t3"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬t1=t2"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬t2=t3"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="tronconVoisins∈TRONCONS ↔ TRONCONS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="trainSurTroncons∈TRAINS  TRONCONS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬t1=t4"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="tronconsArrets∈ARRETS ↔ TRONCONS"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀t⦂TRONCONS·⊤⇒card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬t2=t4"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬t3=t4"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DESTINER/TYPE_destinationTrains/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="ARRETS,TRAINS,TRONCONS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRONCONS,{t1},{t2},{t3},{t4}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14,p15,p16,p17,p18,p19,p20"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p14,p15,p16,p17,p18,p19,p20"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ARRETS,{a1},{a2}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p21,p22"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p25"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p26"/>
+                                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+                                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+                                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p30"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p31"/>
+                                        <org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
+                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+                                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+                                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p13,p12,p7,p10,p1,p4,p14,p15,p16,p17,p18,p19,p20,p21,p22,p24,p33,p34,p35,p36">
+                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="arret" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="destinationTrains" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+        <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="train" org.eventb.core.type="TRAINS"/>
+        <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        <org.eventb.core.prIdent name="tronconsArrets" org.eventb.core.type="ℙ(ARRETS×TRONCONS)"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="train∈TRAINS"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀tra⦂TRAINS·card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="destinationTrains∈TRAINS ⇸ ARRETS"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="arret∈ARRETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧tro≠trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀t⦂TRONCONS·card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="finite(destinationTrains[{train}])"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬a1=a2"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="TRONCONS={t1,t2,t3,t4}"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="ARRETS={a1,a2}"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="trainSurTroncons∼∈TRONCONS ⤀ TRAINS"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀tra⦂TRAINS·card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀t⦂TRONCONS·t∈TRONCONS⇒card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="tronconsArrets={a1 ↦ t1,a1 ↦ t2,a2 ↦ t3,a2 ↦ t4}"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="tronconVoisins={t1 ↦ t2,t2 ↦ t1,t2 ↦ t3,t3 ↦ t2,t3 ↦ t4,t4 ↦ t3,t1 ↦ t4,t4 ↦ t1}"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(trainSurTroncons[{tra}])≤2"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·⊤∧⊤∧⊤∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬t1=t3"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬t1=t2"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬t2=t3"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="destinationTrains∪{train ↦ arret}∈TRAINS ⇸ ARRETS"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="tronconVoisins∈TRONCONS ↔ TRONCONS"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="trainSurTroncons∈TRAINS  TRONCONS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="card(destinationTrains[{train}])=0"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬t1=t4"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="tronconsArrets∈ARRETS ↔ TRONCONS"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀t⦂TRONCONS·⊤⇒card(trainSurTroncons∼[{t}])&lt;2"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬t2=t4"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬t3=t4"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬train∈dom(destinationTrains)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DESTINER/SAF−TS−1−1/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="tra" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ARRETS,TRAINS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRONCONS,{t1},{t2},{t3},{t4}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ARRETS,{a1},{a2}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p27">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p17"/>
+                                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+                                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+                                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p24"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p25"/>
+                                        <org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+                                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+                                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees tra)" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p33">
+                                                        <org.eventb.core.prIdent name="tra" org.eventb.core.type="TRAINS"/>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="arret" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="destinationTrains" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+        <org.eventb.core.prIdent name="train" org.eventb.core.type="TRAINS"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="train∈TRAINS"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀tra⦂TRAINS·card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="arret∈ARRETS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧tro≠trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀t⦂TRONCONS·card(trainSurTroncons∼[{t}])&lt;2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(trainSurTroncons[{tra}])≤2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card((destinationTrains∪{train ↦ arret})[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬a1=a2">
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="TRONCONS={t1,t2,t3,t4}">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="ARRETS={a1,a2}">
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(destinationTrains[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀tra⦂TRAINS·card(trainSurTroncons[{tra}])≤2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀t⦂TRONCONS·t∈TRONCONS⇒card(trainSurTroncons∼[{t}])&lt;2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(trainSurTroncons[{tra}])≤2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="card((destinationTrains∪{train ↦ arret})[{tra}])≤1">
+            <org.eventb.core.prIdent name="tra" org.eventb.core.type="TRAINS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀tra⦂TRAINS·card((destinationTrains∪{train ↦ arret})[{tra}])≤1"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·⊤∧⊤∧⊤∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t1=t3">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬t1=t2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬t2=t3">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="tronconVoisins∈TRONCONS ↔ TRONCONS">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})">
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="card(destinationTrains[{train}])=0"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬t1=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="tronconsArrets∈ARRETS ↔ TRONCONS">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconsArrets" org.eventb.core.type="ℙ(ARRETS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀t⦂TRONCONS·⊤⇒card(trainSurTroncons∼[{t}])&lt;2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬t2=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬t3=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬train∈dom(destinationTrains)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card((destinationTrains∪{train ↦ arret})[{tra}])≤1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/TYPE_destinationTrains/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="ARRETS,TRAINS,TRONCONS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRONCONS,{t1},{t2},{t3},{t4}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ARRETS,{a1},{a2}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p2,p5,p6,p7,p8,p9,p10,p11,p12,p13">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        <org.eventb.core.prIdent name="tronconsArrets" org.eventb.core.type="ℙ(ARRETS×TRONCONS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬t1=t3"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬t1=t2"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬t2=t3"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="tronconVoisins∈TRONCONS ↔ TRONCONS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬a1=a2"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="TRONCONS={t1,t2,t3,t4}"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(TRAINS×ARRETS))∈TRAINS ⇸ ARRETS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="ARRETS={a1,a2}"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬t1=t4"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="tronconsArrets∈ARRETS ↔ TRONCONS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬t2=t4"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬t3=t4"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="tronconsArrets={a1 ↦ t1,a1 ↦ t2,a2 ↦ t3,a2 ↦ t4}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="tronconVoisins={t1 ↦ t2,t2 ↦ t1,t2 ↦ t3,t3 ↦ t2,t3 ↦ t4,t4 ↦ t3,t1 ↦ t4,t4 ↦ t1}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/SAF−TS−1−1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ARRETS,TRAINS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRONCONS,{t1},{t2},{t3},{t4}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ARRETS,{a1},{a2}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t1=t3">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬t1=t2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬t2=t3">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬a1=a2">
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="TRONCONS={t1,t2,t3,t4}">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})">
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="ARRETS={a1,a2}">
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬t1=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬t2=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬t3=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card((∅ ⦂ ℙ(TRAINS×ARRETS))[{tra}])≤1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TERMINER/SAF−TS−1−2/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRONCONS,{t1},{t2},{t3},{t4}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ARRETS,{a1},{a2}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p9,p10"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p21"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p22"/>
+                                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+                                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+                                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="train∈TRAINS">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="train" org.eventb.core.type="TRAINS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀tra⦂TRAINS·card(destinationTrains[{tra}])≤1">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="destinationTrains" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧tro≠trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀t⦂TRONCONS·card(trainSurTroncons∼[{t}])&lt;2">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(destinationTrains[{tra}])≤1">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="destinationTrains" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀tra⦂TRAINS·tra∈TRAINS⇒card(trainSurTroncons[{tra}])≤2">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬a1=a2">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TRONCONS={t1,t2,t3,t4}">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="nouvelArret∈ARRETS">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="nouvelArret" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="ARRETS={a1,a2}">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(destinationTrains[{tra}])≤1">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="destinationTrains" org.eventb.core.type="ℙ(TRAINS×ARRETS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀tra⦂TRAINS·card(trainSurTroncons[{tra}])≤2">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀t⦂TRONCONS·t∈TRONCONS⇒card(trainSurTroncons∼[{t}])&lt;2">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·tra∈TRAINS∧tro∈TRONCONS∧trop∈TRONCONS∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(trainSurTroncons[{tra}])≤2">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="arretCourrant∈ARRETS">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="arretCourrant" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·⊤∧⊤∧⊤∧¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀tra⦂TRAINS,tro⦂TRONCONS,trop⦂TRONCONS·¬tro=trop∧tro∈trainSurTroncons[{tra}]∧trop∈trainSurTroncons[{tra}]⇒tro∈tronconVoisins[{trop}]∧trop∈tronconVoisins[{tro}]">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬t1=t3">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t1=t2">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬t2=t3">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="tronconVoisins∈TRONCONS ↔ TRONCONS">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="a1" org.eventb.core.type="ARRETS"/>
+            <org.eventb.core.prIdent name="a2" org.eventb.core.type="ARRETS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t1=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t1" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="tronconsArrets∈ARRETS ↔ TRONCONS">
+            <org.eventb.core.prIdent name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="tronconsArrets" org.eventb.core.type="ℙ(ARRETS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀t⦂TRONCONS·⊤⇒card(trainSurTroncons∼[{t}])&lt;2">
+            <org.eventb.core.prIdent name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="trainSurTroncons" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬t2=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t2" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬t3=t4">
+            <org.eventb.core.prIdent name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+            <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
+            <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

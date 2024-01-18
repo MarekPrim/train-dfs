@@ -28,4 +28,6 @@
         <org.eventb.core.parameter name="/" org.eventb.core.identifier="nouvelArret"/>
         <org.eventb.core.guard name="1" org.eventb.core.label="grd_arretCourrant_different_nouvelArret" org.eventb.core.predicate="arretCourrant ≠ nouvelArret"/>
     </org.eventb.core.event>
+    <org.eventb.core.variable name="." org.eventb.core.identifier="destinationTrains"/>
+    <org.eventb.core.variable name="/" org.eventb.core.identifier="trainSurTroncons"/>
 </org.eventb.core.machineFile>

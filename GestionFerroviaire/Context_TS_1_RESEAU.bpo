@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="TRAINS" org.eventb.core.type="ℙ(TRAINS)"/>
+        <org.eventb.core.poIdentifier name="TRONCONS" org.eventb.core.type="ℙ(TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="tronconVoisins" org.eventb.core.type="ℙ(TRONCONS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="t1" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="t2" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="t3" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poIdentifier name="t4" org.eventb.core.type="TRONCONS"/>
+        <org.eventb.core.poPredicate name="tronconVoisint" org.eventb.core.predicate="tronconVoisins∈TRONCONS ↔ TRONCONS" org.eventb.core.source="/GestionFerroviaire/Context_TS_0_RESEAU.buc|org.eventb.core.contextFile#Context_TS_0_RESEAU|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="tronconVoisinu" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})" org.eventb.core.source="/GestionFerroviaire/Context_TS_0_RESEAU.buc|org.eventb.core.contextFile#Context_TS_0_RESEAU|org.eventb.core.axiom#."/>
+        <org.eventb.core.poPredicate name="tronconVoisinv" org.eventb.core.predicate="tronconVoisins={t1 ↦ t2,t2 ↦ t1,t2 ↦ t3,t3 ↦ t2,t3 ↦ t4,t4 ↦ t3,t1 ↦ t4,t4 ↦ t1}" org.eventb.core.source="/GestionFerroviaire/Context_TS_0_RESEAU.buc|org.eventb.core.contextFile#Context_TS_0_RESEAU|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poIdentifier name="ARRETS" org.eventb.core.type="ℙ(ARRETS)"/>
+        <org.eventb.core.poIdentifier name="tronconsArrets" org.eventb.core.type="ℙ(ARRETS×TRONCONS)"/>
+        <org.eventb.core.poIdentifier name="a1" org.eventb.core.type="ARRETS"/>
+        <org.eventb.core.poIdentifier name="a2" org.eventb.core.type="ARRETS"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/GestionFerroviaire/Context_TS_1_RESEAU.bpo|org.eventb.core.poFile#Context_TS_1_RESEAU|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="tronconsArrets∈ARRETS ↔ TRONCONS" org.eventb.core.source="/GestionFerroviaire/Context_TS_1_RESEAU.buc|org.eventb.core.contextFile#Context_TS_1_RESEAU|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})" org.eventb.core.source="/GestionFerroviaire/Context_TS_1_RESEAU.buc|org.eventb.core.contextFile#Context_TS_1_RESEAU|org.eventb.core.axiom#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="tronconsArrets={a1 ↦ t1,a1 ↦ t2,a2 ↦ t3,a2 ↦ t4}" org.eventb.core.source="/GestionFerroviaire/Context_TS_1_RESEAU.buc|org.eventb.core.contextFile#Context_TS_1_RESEAU|org.eventb.core.axiom#-"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -409,11 +409,11 @@
         <org.eventb.core.prPred name="p3" org.eventb.core.predicate="tronconVoisins={t1 ↦ t2,t2 ↦ t1,t2 ↦ t3,t3 ↦ t2,t3 ↦ t4,t4 ↦ t3,t1 ↦ t4,t4 ↦ t1}"/>
         <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀tra⦂TRAINS·⊤⇒card(trainSurTroncons'[{tra}])≤2"/>
         <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀t⦂TRONCONS·t∈TRONCONS"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="INITIALISATION/SAF−TS−0−5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="tro,tra,trop" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="TRAINS,TRONCONS">
         <org.eventb.core.lang name="L"/>
@@ -517,13 +517,13 @@
             <org.eventb.core.prIdent name="tra" org.eventb.core.type="TRAINS"/>
             <org.eventb.core.prIdent name="trop" org.eventb.core.type="TRONCONS"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="INITIALISATION/INIT_tronconPossedeTrain/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="TRAINS,TRONCONS">
         <org.eventb.core.lang name="L"/>
@@ -836,12 +836,12 @@
             <org.eventb.core.prIdent name="tra" org.eventb.core.type="TRAINS"/>
             <org.eventb.core.prIdent name="trainSurTroncons0'" org.eventb.core.type="ℙ(TRAINS×TRONCONS)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="INITIALISATION/SAF−TS−0−1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="TRAINS,TRONCONS">
         <org.eventb.core.lang name="L"/>
@@ -1063,9 +1063,9 @@
             <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀t⦂TRONCONS·finite(trainSurTroncons∼[{t}])"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="ENTRER/grd_train_sur_un_troncon/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
@@ -1565,10 +1565,10 @@
         <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬t2=t4"/>
         <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬t3=t4"/>
         <org.eventb.core.prPred name="p20" org.eventb.core.predicate="∃x⦂TRONCONS·trainSurTroncons[{train}]={x}"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="ENTRER/SAF−TS−0−1/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="t" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="TRAINS,TRONCONS">
         <org.eventb.core.lang name="L"/>
@@ -1682,9 +1682,9 @@
             <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∃x⦂TRONCONS·trainSurTroncons[{train}]={x}"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="ENTRER/SAF−TS−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="tra0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="TRAINS,TRONCONS">
@@ -2800,10 +2800,10 @@
         <org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀t⦂TRONCONS·⊤⇒card(trainSurTroncons∼[{t}])&lt;2"/>
         <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬t2=t4"/>
         <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬t3=t4"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="ARRIVER/SAF−TS−0−1/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="t" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="TRAINS,TRONCONS">
         <org.eventb.core.lang name="L"/>
@@ -2909,9 +2909,9 @@
             <org.eventb.core.prIdent name="t3" org.eventb.core.type="TRONCONS"/>
             <org.eventb.core.prIdent name="t4" org.eventb.core.type="TRONCONS"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="ARRIVER/SAF−TS−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="tra" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="TRAINS,TRONCONS">
@@ -2994,11 +2994,11 @@
         <org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀t⦂TRONCONS·⊤⇒card(trainSurTroncons∼[{t}])&lt;2"/>
         <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬t2=t4"/>
         <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬t3=t4"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="ARRIVER/SAF−TS−0−5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="tro,tra,trop" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="TRAINS,TRONCONS">
         <org.eventb.core.lang name="L"/>
@@ -3118,12 +3118,12 @@
         <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀t⦂TRONCONS·⊤⇒card(trainSurTroncons∼[{t}])&lt;2"/>
         <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬t2=t4"/>
         <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬t3=t4"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
         <org.eventb.core.prReas name="r6" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
 </org.eventb.core.prFile>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-    <org.eventb.core.psStatus name="SAF−TS−0−1/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="SAF−TS−0−4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/TYPE_trainSurTroncons/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/TYPE_trainSurTroncons∼/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/SAF−TS−0−1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/SAF−TS−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/SAF−TS−0−5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/INIT_trainSurTroncons/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/INIT_trainSurTroncons/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ENTRER/grd_train_sur_un_seul_troncon/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ENTRER/SAF−TS−0−1/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ENTRER/TYPE_trainSurTroncons/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ENTRER/TYPE_trainSurTroncons∼/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ENTRER/SAF−TS−0−1/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ENTRER/SAF−TS−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ENTRER/SAF−TS−0−5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ARRIVER/grd_train_sur_deux_troncons/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ARRIVER/TYPE_trainSurTroncons/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ARRIVER/TYPE_trainSurTroncons∼/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ARRIVER/SAF−TS−0−1/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ARRIVER/SAF−TS−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ARRIVER/SAF−TS−0−5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="139" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SAF−TS−0−1/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SAF−TS−0−4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/TYPE_trainSurTroncons/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/TYPE_trainSurTroncons∼/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/SAF−TS−0−1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/SAF−TS−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/SAF−TS−0−5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/INIT_trainSurTroncons/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/INIT_trainSurTroncons/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/grd_train_sur_un_seul_troncon/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/SAF−TS−0−1/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/TYPE_trainSurTroncons/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/TYPE_trainSurTroncons∼/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/SAF−TS−0−1/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/SAF−TS−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/SAF−TS−0−5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/grd_train_sur_deux_troncons/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/TYPE_trainSurTroncons/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/TYPE_trainSurTroncons∼/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/SAF−TS−0−1/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/SAF−TS−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/SAF−TS−0−5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

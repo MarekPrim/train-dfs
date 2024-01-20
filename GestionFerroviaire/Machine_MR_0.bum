@@ -3,6 +3,7 @@
     <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
         <org.eventb.core.action name="'" org.eventb.core.assignment="motriceTrain :∈ TRAINS ↣ WAGONS" org.eventb.core.label="VAR_motriceTrain"/>
         <org.eventb.core.action name="(" org.eventb.core.assignment="wagonSuivant :∈ WAGONS ⤔ WAGONS" org.eventb.core.label="VAR_wagonSuivant"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="wagonSurTroncons :∣ ∀t, tra, wag · t ∈ TRONCONS  ∧ wag ∈ WAGONS ∧ tra ∈ TRAINS  " org.eventb.core.label="VAR_wagonSurTroncons"/>
     </org.eventb.core.event>
     <org.eventb.core.seesContext name="(" org.eventb.core.target="Context_MR_0"/>
     <org.eventb.core.refinesMachine name=")" org.eventb.core.target="Machine_TS_2"/>
@@ -29,4 +30,7 @@
     <org.eventb.core.variable name="2" org.eventb.core.identifier="wagonSuivant"/>
     <org.eventb.core.invariant name="3" org.eventb.core.comment="SAF−MR−0−2 : Partial injection ⤔ Tout élément de l'arrivée a au plus un antécédent (i.e. un wagon n'est relié qu'à un seul wagon)" org.eventb.core.label="TYPE_wagonSuivant" org.eventb.core.predicate="wagonSuivant ∈ WAGONS ⤔ WAGONS"/>
     <org.eventb.core.invariant name="4" org.eventb.core.comment="SAF−MR−0−3 : La motrice n'est pas le wagon suivant d'un autre wagon" org.eventb.core.label="SAF−MR−0−3" org.eventb.core.predicate="∀ wagon · wagon ∈ WAGONS ∧ wagon ∈ ran(motriceTrain) ⇒ wagon ∉ ran(wagonSuivant)"/>
+    <org.eventb.core.invariant name="5" org.eventb.core.label="TYPE_wagonSurTroncons" org.eventb.core.predicate="wagonSurTroncons ∈ WAGONS  TRONCONS"/>
+    <org.eventb.core.variable name="6" org.eventb.core.identifier="wagonSurTroncons"/>
+    <org.eventb.core.invariant name="7" org.eventb.core.label="TYPE_wagonSurTroncons∼" org.eventb.core.predicate="wagonSurTroncons∼ ∈ TRONCONS ⤀ WAGONS" org.eventb.core.theorem="true"/>
 </org.eventb.core.machineFile>

@@ -44,5 +44,4 @@
     <org.eventb.core.variable name="2" org.eventb.core.identifier="trainSurTroncons"/>
     <org.eventb.core.variable name="3" org.eventb.core.identifier="routeTrains"/>
     <org.eventb.core.invariant name="4" org.eventb.core.label="TYPE_routeTrains" org.eventb.core.predicate="routeTrains ∈ TRAINS ↔ TRONCONS"/>
-    <org.eventb.core.invariant name="5" org.eventb.core.label="inv1" org.eventb.core.predicate="⊤"/>
 </org.eventb.core.machineFile>

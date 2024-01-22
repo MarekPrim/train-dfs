@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-    <org.eventb.core.psStatus name="SAF−TS−1−1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/SAF−TS−1−1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/INIT_destinationTrains/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DESTINER/grd_train_sans_destination/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DESTINER/SAF−TS−1−1/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="TERMINER/SAF−TS−1−2/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="TERMINER/SAF−TS−1−1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/TYPE_destinationTrain/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="56" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/SAF−TS−1−2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="56" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/INIT_destinationTrain/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="56" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/SAF−TS−1−2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="58" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/SAF−TS−1−2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="58" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="STATIONNER/TYPE_destinationTrain/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="STATIONNER/SAF−TS−1−2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="58" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="PARTIR/TYPE_destinationTrain/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="PARTIR/SAF−TS−1−2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="58" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

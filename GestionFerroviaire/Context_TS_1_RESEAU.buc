@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
     <org.eventb.core.extendsContext name="'" org.eventb.core.target="Context_TS_1"/>
-    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="(" org.eventb.core.identifier="tronconsArrets"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="(" org.eventb.core.identifier="arretVoies"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="." org.eventb.core.identifier="arretEntreeSortie"/>
     <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=")" org.eventb.core.identifier="a1"/>
     <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="*" org.eventb.core.identifier="a2"/>
-    <org.eventb.core.axiom name="+" org.eventb.core.label="TYPE_tronconsArrets" org.eventb.core.predicate="tronconsArrets ∈ ARRETS ↔ TRONCONS"/>
+    <org.eventb.core.axiom name="+" org.eventb.core.label="TYPE_arretVoies" org.eventb.core.predicate="arretVoies ∈ ARRETS ↔ TRONCONS"/>
+    <org.eventb.core.axiom name="/" org.eventb.core.label="TYPE_arretEntreeSortie" org.eventb.core.predicate="arretEntreeSortie ∈ ARRETS ↔ TRONCONS"/>
     <org.eventb.core.axiom name="," org.eventb.core.label="VAL_ARRETS" org.eventb.core.predicate="partition(ARRETS,{a1},{a2})"/>
-    <org.eventb.core.axiom name="-" org.eventb.core.label="VAL_tronconsArrets" org.eventb.core.predicate="tronconsArrets = {a1 ↦ t1, a1 ↦ t2, a2 ↦ t3, a2 ↦ t4}"/>
+    <org.eventb.core.axiom name="-" org.eventb.core.label="VAL_arretVoies" org.eventb.core.predicate="arretVoies = {a1 ↦ t1a1, a1 ↦ t2a1, a2 ↦ t1a2}"/>
+    <org.eventb.core.axiom name="0" org.eventb.core.label="VAL_arretEntreeSortie" org.eventb.core.predicate="arretEntreeSortie = {a1 ↦ t1, a1 ↦ t2, a2 ↦ t2, a2 ↦ t3}"/>
 </org.eventb.core.contextFile>

@@ -6,7 +6,10 @@
     <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="*" org.eventb.core.identifier="t2"/>
     <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="+" org.eventb.core.identifier="t3"/>
     <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="," org.eventb.core.identifier="t4"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst1" org.eventb.core.identifier="t1a1"/>
     <org.eventb.core.axiom name="-" org.eventb.core.label="TYPE_tronconVoisins" org.eventb.core.predicate="tronconVoisins ∈ TRONCONS ↔ TRONCONS"/>
-    <org.eventb.core.axiom name="." org.eventb.core.label="VAL_TRONCONS" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4})"/>
-    <org.eventb.core.axiom name="/" org.eventb.core.label="VAL_tronconVoisins" org.eventb.core.predicate="tronconVoisins = {t1 ↦ t2, t2 ↦ t1, t2 ↦ t3, t3 ↦ t2, t3 ↦ t4, t4 ↦ t3, t1 ↦ t4, t4 ↦ t1}"/>
+    <org.eventb.core.axiom name="." org.eventb.core.label="VAL_TRONCONS" org.eventb.core.predicate="partition(TRONCONS,{t1},{t2},{t3},{t4},{t1a1},{t2a1},{t1a2})"/>
+    <org.eventb.core.axiom name="/" org.eventb.core.label="VAL_tronconVoisins" org.eventb.core.predicate="tronconVoisins = {t3 ↦ t4, t4 ↦ t3, t1 ↦ t4, t4 ↦ t1, t1a1 ↦ t1, t1 ↦ t1a1, t2a1 ↦ t1, t1 ↦ t2a1, t1a1 ↦ t2, t2 ↦ t1a1, t2a1 ↦ t2, t2 ↦ t2a1, t1a2 ↦ t2, t2 ↦ t1a2, t1a2 ↦ t3, t3 ↦ t1a2}"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst2" org.eventb.core.identifier="t2a1"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst3" org.eventb.core.identifier="t1a2"/>
 </org.eventb.core.contextFile>

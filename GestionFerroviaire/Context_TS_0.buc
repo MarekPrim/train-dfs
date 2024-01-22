@@ -2,4 +2,6 @@
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
     <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="TRAINS"/>
     <org.eventb.core.carrierSet name="(" org.eventb.core.identifier="TRONCONS"/>
+    <org.eventb.core.axiom name=")" org.eventb.core.label="FINI_TRAINS" org.eventb.core.predicate="finite(TRAINS)"/>
+    <org.eventb.core.axiom name="*" org.eventb.core.label="FINI_TRONCONS" org.eventb.core.predicate="finite(TRONCONS)"/>
 </org.eventb.core.contextFile>

@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
     <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
-        <org.eventb.core.action name="'" org.eventb.core.assignment="destinationTrains :∈ TRAINS → ARRETS" org.eventb.core.label="INIT_destinationTrains"/>
+        <org.eventb.core.action name="'" org.eventb.core.assignment="destinationTrain :∈ TRAINS → ARRETS" org.eventb.core.label="INIT_destinationTrain"/>
     </org.eventb.core.event>
     <org.eventb.core.refinesMachine name="(" org.eventb.core.target="Machine_TS_0"/>
     <org.eventb.core.seesContext name=")" org.eventb.core.target="Context_TS_1_RESEAU"/>
-    <org.eventb.core.invariant name="*" org.eventb.core.label="TYPE_destinationTrains" org.eventb.core.predicate="destinationTrains ∈ TRAINS ↔ ARRETS"/>
-    <org.eventb.core.invariant name="+" org.eventb.core.label="SAF−TS−1−1" org.eventb.core.predicate="∀tra · tra ∈ TRAINS ⇒ card(destinationTrains[{tra}]) ≤ 1"/>
+    <org.eventb.core.invariant name="*" org.eventb.core.comment="SAF-TS-1-1 est vérifiée par définition (Fonction partielle)" org.eventb.core.label="TYPE_destinationTrain" org.eventb.core.predicate="destinationTrain ∈ TRAINS ⇸ ARRETS"/>
     <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ENTRER">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="ENTRER"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="SAF−TS−1−3" org.eventb.core.predicate="trainSurTroncons[{train}] ⊆ arretEntreeSortie[destinationTrain[{train}]] ⇒ troncon ∈ arretVoies[destinationTrain[{train}]]"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="SAF−TS−1−4" org.eventb.core.predicate="¬(trainSurTroncons[{train}] ⊆ arretVoies[destinationTrain[{train}]])"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="SAF−TS−1−5" org.eventb.core.predicate="destinationTrain[{train}] ≠ ∅"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ARRIVER">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="ARRIVER"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="SAF−TS−1−3" org.eventb.core.predicate="trainSurTroncons[{train}] ∩ arretVoies[destinationTrain[{train}]] ≠ ∅ ⇒ troncon ∈ arretVoies[destinationTrain[{train}]]"/>
     </org.eventb.core.event>
-    <org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DESTINER">
-        <org.eventb.core.guard name="*" org.eventb.core.label="TYPE_train" org.eventb.core.predicate="train ∈ TRAINS"/>
+    <org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="STATIONNER">
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="train"/>
+        <org.eventb.core.parameter name="," org.eventb.core.identifier="troncon"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="TYPE_train" org.eventb.core.predicate="train ∈ TRAINS"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="TYPE_troncon" org.eventb.core.predicate="troncon ∈ TRONCONS"/>
+        <org.eventb.core.guard name="grd3" org.eventb.core.label="grd_train_sur_ce_troncon_uniquement" org.eventb.core.predicate="trainSurTroncons[{train}] = {troncon}"/>
+        <org.eventb.core.guard name="grd6" org.eventb.core.label="grd_destination_atteinte" org.eventb.core.predicate="{troncon} ⊆ arretVoies[destinationTrain[{train}]]"/>
+        <org.eventb.core.action name="grd5" org.eventb.core.assignment="destinationTrain ≔ {train} ⩤ destinationTrain" org.eventb.core.label="act_suppression_destination"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PARTIR">
         <org.eventb.core.guard name="+" org.eventb.core.label="TYPE_arret" org.eventb.core.predicate="arret ∈ ARRETS"/>
-        <org.eventb.core.guard name="'" org.eventb.core.label="grd_train_sans_destination" org.eventb.core.predicate="card(destinationTrains[{train}]) = 0"/>
-        <org.eventb.core.parameter name="(" org.eventb.core.identifier="train"/>
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd_train_sans_destination" org.eventb.core.predicate="destinationTrain[{train}] = ∅"/>
         <org.eventb.core.parameter name=")" org.eventb.core.identifier="arret"/>
-        <org.eventb.core.action name="," org.eventb.core.assignment="destinationTrains ≔ destinationTrains  ∪ {train ↦ arret}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="destinationTrain ≔ destinationTrain ∪ {train ↦ arret}" org.eventb.core.label="act_ajout_destination"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd_dest_diff" org.eventb.core.predicate="arret ∉ arretVoies∼[trainSurTroncons[{train}]]"/>
+        <org.eventb.core.refinesEvent name="1" org.eventb.core.target="ENTRER"/>
     </org.eventb.core.event>
-    <org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="TERMINER">
-        <org.eventb.core.guard name="'" org.eventb.core.label="TYPE_train" org.eventb.core.predicate="train ∈ TRAINS"/>
-        <org.eventb.core.action name="(" org.eventb.core.assignment="destinationTrains(train) ≔ nouvelArret" org.eventb.core.label="act1"/>
-        <org.eventb.core.parameter name=")" org.eventb.core.identifier="train"/>
-        <org.eventb.core.guard name="." org.eventb.core.label="TYPE_arretCourrant" org.eventb.core.predicate="arretCourrant ∈ ARRETS"/>
-        <org.eventb.core.guard name="0" org.eventb.core.label="TYPE_nouvelArret" org.eventb.core.predicate="nouvelArret ∈ ARRETS"/>
-        <org.eventb.core.guard name="+" org.eventb.core.label="SAF−TS−1−2" org.eventb.core.predicate="card(trainSurTroncons[{train}]) = 1"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="grd_train_avec_destination" org.eventb.core.predicate="arretCourrant ∈ destinationTrains[{train}]"/>
-        <org.eventb.core.guard name="," org.eventb.core.label="grd_train_sur_destination" org.eventb.core.predicate="trainSurTroncons[{train}] ⊆ tronconsArrets[{arretCourrant}]"/>
-        <org.eventb.core.parameter name="-" org.eventb.core.identifier="arretCourrant"/>
-        <org.eventb.core.parameter name="/" org.eventb.core.identifier="nouvelArret"/>
-        <org.eventb.core.guard name="1" org.eventb.core.label="grd_arretCourrant_different_nouvelArret" org.eventb.core.predicate="arretCourrant ≠ nouvelArret"/>
-    </org.eventb.core.event>
-    <org.eventb.core.variable name="." org.eventb.core.identifier="destinationTrains"/>
+    <org.eventb.core.variable name="." org.eventb.core.identifier="destinationTrain"/>
     <org.eventb.core.variable name="/" org.eventb.core.identifier="trainSurTroncons"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="SAF−TS−1−2" org.eventb.core.predicate="∀train · ∃arret · arret ∈ ARRETS ∧ train ∈ TRAINS ∧ destinationTrain[{train}] = ∅ ⇒ trainSurTroncons[{train}] ⊆ arretVoies[{arret}]"/>
 </org.eventb.core.machineFile>

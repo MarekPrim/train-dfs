@@ -2,4 +2,5 @@
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
     <org.eventb.core.extendsContext name="'" org.eventb.core.target="Context_TS_0_RESEAU"/>
     <org.eventb.core.carrierSet name="(" org.eventb.core.identifier="ARRETS"/>
+    <org.eventb.core.axiom name=")" org.eventb.core.label="FINI_ARRETS" org.eventb.core.predicate="finite(ARRETS)"/>
 </org.eventb.core.contextFile>

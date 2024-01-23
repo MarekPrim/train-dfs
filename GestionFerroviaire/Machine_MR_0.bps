@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-    <org.eventb.core.psStatus name="SAF−MR−0−3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="117" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="AVANCER/grd_train_sur_deux_troncons/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="117" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="AVANCER/TYPE_wagonsSurTroncons/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="117" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="AVANCER/SAF−MR−0−3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="117" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="AVANCER/act1/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="117" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SAF−MR−0−2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SAF−MR−0−3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SAF−MR−0−4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/TYPE_tronconPossedeWagons/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/TYPE_tailleTrain/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="186" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/SAF−MR−0−2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="186" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/SAF−MR−0−3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="186" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/SAF−MR−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="186" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/VAL_nbWagons/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="190" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/TYPE_tronconPossedeWagons/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="190" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/SAF−MR−0−3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="190" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/SAF−MR−0−4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="190" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ENTRER/act_wagons_entre_troncon/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="190" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AVANCER/VAL_nbWagons/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AVANCER/grd_train_sur_deux_troncons/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AVANCER/TYPE_tronconPossedeWagons/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AVANCER/SAF−MR−0−3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AVANCER/SAF−MR−0−4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AVANCER/act_mouvement_wagon/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/VAL_nbWagons/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/TYPE_tronconPossedeWagons/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/SAF−MR−0−3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/SAF−MR−0−4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ARRIVER/act_wagons_quitte_troncon/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="PARTIR/VAL_nbWagons/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="192" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="PARTIR/TYPE_tronconPossedeWagons/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="192" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="PARTIR/SAF−MR−0−3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="192" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="PARTIR/SAF−MR−0−4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="192" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="PARTIR/act_wagons_entre_troncon/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="192" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INIT_WAGONS/TYPE_tronconPossedeWagons/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INIT_WAGONS/TYPE_tailleTrain/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INIT_WAGONS/SAF−MR−0−2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INIT_WAGONS/SAF−MR−0−3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INIT_WAGONS/SAF−MR−0−4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="187" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

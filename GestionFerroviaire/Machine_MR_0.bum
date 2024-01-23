@@ -1,63 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
     <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
-        <org.eventb.core.action name="'" org.eventb.core.assignment="tailleTrain :∣ ∀ train, n · train ∈ TRAINS ∧ n ∈ ℕ1 ∧ n &gt; 0 ∧ tailleTrain'(train) = n" org.eventb.core.label="VAR_tailleTrain"/>
-        <org.eventb.core.action name="(" org.eventb.core.assignment="wagonsSurTroncons :∣ ∀ train, taille, troncon · train ∈ TRAINS ∧ taille ∈ ℕ1 ∧ taille = tailleTrain(train) ∧ troncon ∈ TRONCONS ∧ troncon ∈ trainSurTroncons[{train}] ⇒ wagonsSurTroncons'(troncon) = taille" org.eventb.core.label="VAR_wagonsSurTroncons"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="tronconPossedeWagons ≔ ∅" org.eventb.core.label="INIT_tronconPossedeWagons"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="tailleTrain ≔ ∅" org.eventb.core.label="INIT_tailleTrain"/>
     </org.eventb.core.event>
     <org.eventb.core.seesContext name="(" org.eventb.core.target="Context_MR_0"/>
     <org.eventb.core.refinesMachine name=")" org.eventb.core.target="Machine_TS_2"/>
     <org.eventb.core.event name="*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ENTRER">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="ENTRER"/>
-        <org.eventb.core.parameter name="(" org.eventb.core.identifier="nWagons"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="Type_nWagons_" org.eventb.core.predicate="nWagons ∈ ℕ1"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="VAR_nWagons" org.eventb.core.predicate="nWagons &gt; 0"/>
-        <org.eventb.core.action name="+" org.eventb.core.assignment="wagonsSurTroncons ≔ wagonsSurTroncons ∪ {troncon ↦ nWagons} ∪ {tronconActuel ↦ wagonsSurTroncons(tronconActuel) − nWagons}" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="TYPE_nbWagons_" org.eventb.core.predicate="nbWagons ∈ ℕ1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="VAL_nbWagons" org.eventb.core.predicate="nbWagons &gt; 0 ∧ nbWagons &lt; tailleTrain(train)"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="tronconPossedeWagons ≔ (tronconPossedeWagons ∪ {troncon ↦ nbWagons})  {tronconActuel ↦ tronconPossedeWagons(tronconActuel) − nbWagons}" org.eventb.core.label="act_wagons_entre_troncon"/>
+        <org.eventb.core.parameter name="0" org.eventb.core.identifier="nbWagons"/>
         <org.eventb.core.parameter name="-" org.eventb.core.identifier="tronconActuel"/>
         <org.eventb.core.guard name="." org.eventb.core.label="TYPE_tronconActuel" org.eventb.core.predicate="tronconActuel ∈ TRONCONS"/>
-        <org.eventb.core.guard name="/" org.eventb.core.label="VAR_tronconActuel" org.eventb.core.predicate="tronconActuel ∈ trainSurTroncons[{train}]"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="VAL_tronconActuel" org.eventb.core.predicate="{tronconActuel} = trainSurTroncons[{train}]"/>
     </org.eventb.core.event>
     <org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AVANCER">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="train"/>
-        <org.eventb.core.parameter name="(" org.eventb.core.identifier="troncon1"/>
-        <org.eventb.core.parameter name="*" org.eventb.core.identifier="troncon2"/>
-        <org.eventb.core.parameter name=")" org.eventb.core.identifier="nWagons"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="tronconDevant"/>
+        <org.eventb.core.parameter name="*" org.eventb.core.identifier="tronconDerriere"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="nbWagons"/>
         <org.eventb.core.guard name="+" org.eventb.core.label="TYPE_train" org.eventb.core.predicate="train ∈ TRAINS"/>
-        <org.eventb.core.guard name="," org.eventb.core.label="TYPE_troncon1" org.eventb.core.predicate="troncon1 ∈ TRONCONS"/>
-        <org.eventb.core.guard name="." org.eventb.core.label="TYPE_troncon2" org.eventb.core.predicate="troncon2 ∈ TRONCONS"/>
-        <org.eventb.core.guard name="-" org.eventb.core.label="TYPE_nWagons" org.eventb.core.predicate="nWagons ∈ ℕ1"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="TYPE_tronconDevant" org.eventb.core.predicate="tronconDevant ∈ TRONCONS"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="TYPE_tronconDerriere" org.eventb.core.predicate="tronconDerriere ∈ TRONCONS"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="TYPE_nWagons" org.eventb.core.predicate="nbWagons ∈ ℕ1"/>
+        <org.eventb.core.guard name="4" org.eventb.core.label="VAL_nbWagons" org.eventb.core.predicate="nbWagons &gt; 0 ∧ nbWagons &lt; tronconPossedeWagons(tronconDerriere)"/>
+        <org.eventb.core.guard name="3" org.eventb.core.label="VAL_tronconDevant" org.eventb.core.predicate="tronconDevant ∈ trainSurTroncons[{train}]"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="tronconPossedeWagons ≔ (tronconPossedeWagons  {tronconDerriere ↦ tronconPossedeWagons(tronconDerriere)−nbWagons})  {tronconDevant ↦ tronconPossedeWagons(tronconDevant)+nbWagons}" org.eventb.core.label="act_mouvement_wagon"/>
+        <org.eventb.core.guard name="5" org.eventb.core.label="VAR_tronconDerriere" org.eventb.core.predicate="tronconDerriere ∈ trainSurTroncons[{train}]"/>
         <org.eventb.core.guard name="2" org.eventb.core.label="grd_train_sur_deux_troncons" org.eventb.core.predicate="card(trainSurTroncons[{train}]) = 2"/>
-        <org.eventb.core.guard name="4" org.eventb.core.label="VAR_nWagons" org.eventb.core.predicate="nWagons &gt; 0"/>
-        <org.eventb.core.guard name="3" org.eventb.core.label="VAR_troncon1" org.eventb.core.predicate="troncon1 ∈ trainSurTroncons[{train}]"/>
-        <org.eventb.core.action name="1" org.eventb.core.assignment="wagonsSurTroncons ≔ wagonsSurTroncons ∪ {troncon1 ↦ wagonsSurTroncons(troncon1) − nWagons} ∪ {troncon2 ↦ wagonsSurTroncons(troncon2) + nWagons}" org.eventb.core.label="act1"/>
-        <org.eventb.core.guard name="5" org.eventb.core.label="VAR_troncon2" org.eventb.core.predicate="troncon2 ∈ trainSurTroncons[{train}]"/>
-        <org.eventb.core.guard name="7" org.eventb.core.label="VAR_troncon1_troncon2" org.eventb.core.predicate="troncon1 ≠ troncon2"/>
+        <org.eventb.core.guard name="7" org.eventb.core.label="grd_troncons_diff" org.eventb.core.predicate="tronconDevant ≠ tronconDerriere"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ARRIVER">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="ARRIVER"/>
-        <org.eventb.core.parameter name="(" org.eventb.core.identifier="troncon2"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="TYPE_troncon2" org.eventb.core.predicate="troncon2 ∈ TRONCONS"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="VAR_troncon2" org.eventb.core.predicate="troncon2 ∈ trainSurTroncons[{train}]"/>
-        <org.eventb.core.action name="+" org.eventb.core.assignment="wagonsSurTroncons ≔ (wagonsSurTroncons  {troncon ↦ wagonsSurTroncons(troncon)}) ∪ {troncon2 ↦ tailleTrain(train)}" org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="TYPE_nbWagons" org.eventb.core.predicate="nbWagons ∈ ℕ1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="VAL_nbWagons" org.eventb.core.predicate="nbWagons = tronconPossedeWagons(tronconQuitte)"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="tronconPossedeWagons ≔ ({tronconQuitte} ⩤ tronconPossedeWagons)  {troncon ↦ tailleTrain(train)}" org.eventb.core.label="act_wagons_quitte_troncon"/>
+        <org.eventb.core.parameter name="," org.eventb.core.identifier="nbWagons"/>
     </org.eventb.core.event>
-    <org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DESTINER">
-        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DESTINER"/>
+    <org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="STATIONNER">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="STATIONNER"/>
     </org.eventb.core.event>
-    <org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TERMINER">
-        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TERMINER"/>
+    <org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PARTIR">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="PARTIR"/>
+        <org.eventb.core.parameter name="element3" org.eventb.core.identifier="nbWagons"/>
+        <org.eventb.core.parameter name="element1" org.eventb.core.identifier="tronconActuel"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="TYPE_nbWagons_" org.eventb.core.predicate="nbWagons ∈ ℕ1"/>
+        <org.eventb.core.guard name="grd3" org.eventb.core.label="VAL_nbWagons" org.eventb.core.predicate="nbWagons &gt; 0 ∧ nbWagons &lt; tailleTrain(train)"/>
+        <org.eventb.core.guard name="grd4" org.eventb.core.label="VAL_tronconActuel" org.eventb.core.predicate="{tronconActuel} = trainSurTroncons[{train}]"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="TYPE_tronconActuel" org.eventb.core.predicate="tronconActuel ∈ TRONCONS"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="tronconPossedeWagons ≔ (tronconPossedeWagons ∪ {troncon ↦ nbWagons})  {tronconActuel ↦ tronconPossedeWagons(tronconActuel) − nbWagons}" org.eventb.core.label="act_wagons_entre_troncon"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CREER_ROUTE">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="CREER_ROUTE"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd_train_possede_wagon" org.eventb.core.predicate="train ∈ dom(tailleTrain)"/>
     </org.eventb.core.event>
-    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="UPDATE_ROUTE">
-        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="UPDATE_ROUTE"/>
+    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="RALLONGER_ROUTE">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="RALLONGER_ROUTE"/>
     </org.eventb.core.event>
-    <org.eventb.core.invariant name="0" org.eventb.core.label="TYPE_tailleTrain" org.eventb.core.predicate="tailleTrain ∈ TRAINS → ℕ1"/>
-    <org.eventb.core.invariant name="3" org.eventb.core.label="TYPE_wagonsSurTroncons" org.eventb.core.predicate="wagonsSurTroncons ∈ TRONCONS ⇸ ℕ1"/>
-    <org.eventb.core.invariant name="4" org.eventb.core.label="SAF−MR−0−2" org.eventb.core.predicate="∀ taille · taille ∈ ℕ1 ∧ taille ∈ ran(tailleTrain) ⇒ taille &gt; 0"/>
-    <org.eventb.core.invariant name="5" org.eventb.core.comment="Si un train est sur deux troncons, la somme des wagons sur les troncons est égal à la taille du train" org.eventb.core.label="SAF−MR−0−3" org.eventb.core.predicate="∀ train, tron1, tron2 · train ∈ TRAINS ∧ tron1 ∈ TRONCONS ∧ tron2 ∈ TRONCONS ∧ tron1 ∈ trainSurTroncons[{train}] ∧ tron2 ∈ trainSurTroncons[{train}] ⇒ tailleTrain(train) = wagonsSurTroncons(tron1) + wagonsSurTroncons(tron2)"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="TYPE_tronconPossedeWagons" org.eventb.core.predicate="tronconPossedeWagons ∈ TRONCONS ⇸ ℕ1"/>
+    <org.eventb.core.invariant name="?" org.eventb.core.label="TYPE_tailleTrain" org.eventb.core.predicate="tailleTrain ∈ TRAINS ⇸ ℕ1"/>
+    <org.eventb.core.invariant name="4" org.eventb.core.comment="Si un train possède une motrice alors sa taille est au minimum de 1" org.eventb.core.label="SAF−MR−0−2" org.eventb.core.predicate="∀ train · train ∈ TRAINS ∧ train ∈ dom(tailleTrain) ⇒ tailleTrain(train) &gt; 0"/>
     <org.eventb.core.variable name="8" org.eventb.core.identifier="trainSurTroncons"/>
-    <org.eventb.core.variable name="9" org.eventb.core.identifier="destinationTrains"/>
-    <org.eventb.core.variable name=":" org.eventb.core.identifier="routeTrains"/>
-    <org.eventb.core.variable name="1" org.eventb.core.identifier="tailleTrain"/>
-    <org.eventb.core.variable name="6" org.eventb.core.identifier="wagonsSurTroncons"/>
+    <org.eventb.core.variable name="9" org.eventb.core.identifier="destinationTrain"/>
+    <org.eventb.core.variable name=":" org.eventb.core.identifier="routeTrain"/>
+    <org.eventb.core.variable name="6" org.eventb.core.identifier="tronconPossedeWagons"/>
+    <org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SUPPRIMER_ROUTE">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SUPPRIMER_ROUTE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="&gt;" org.eventb.core.identifier="tailleTrain"/>
+    <org.eventb.core.invariant name="B" org.eventb.core.label="SAF−MR−0−3" org.eventb.core.predicate="∀ train, tron1, tron2 · train ∈ TRAINS ∧ tron1 ∈ TRONCONS ∧ tron2 ∈ TRONCONS ∧ tron1 ≠ tron2 ∧ tron1 ∈ trainSurTroncons[{train}] ∧ tron2 ∈ trainSurTroncons[{train}] ⇒ tailleTrain(train) = tronconPossedeWagons(tron1) + tronconPossedeWagons(tron2)"/>
+    <org.eventb.core.invariant name="inv1" org.eventb.core.label="SAF−MR−0−4" org.eventb.core.predicate="∀ train, tron1 · train ∈ TRAINS ∧ tron1 ∈ TRONCONS ∧ {tron1} = trainSurTroncons[{train}] ∧ train ∈ dom(tailleTrain) ⇒ tailleTrain(train) = tronconPossedeWagons(tron1)"/>
+    <org.eventb.core.event name="inv2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INIT_WAGONS">
+        <org.eventb.core.guard name=")" org.eventb.core.label="TYPE_train" org.eventb.core.predicate="train ∈ TRAINS"/>
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd_train_sans_wagons" org.eventb.core.predicate="train ∉ dom(tailleTrain)"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="train"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="tailleTrain ≔ tailleTrain ∪ {train ↦ nbWagons}" org.eventb.core.label="act_ajout_taille_train"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="tronconPossedeWagons ≔ tronconPossedeWagons ∪ {tronconActuel ↦ nbWagons}" org.eventb.core.label="act_ajout_wagons_troncon"/>
+        <org.eventb.core.parameter name="," org.eventb.core.identifier="nbWagons"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="TYPE_nbWagons" org.eventb.core.predicate="nbWagons ∈ ℕ1"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="TYPE_tronconActuel" org.eventb.core.predicate="tronconActuel ∈ TRONCONS"/>
+        <org.eventb.core.parameter name="/" org.eventb.core.identifier="tronconActuel"/>
+        <org.eventb.core.guard name="0" org.eventb.core.label="grd_troncon_train" org.eventb.core.predicate="{tronconActuel} = trainSurTroncons[{train}]"/>
+    </org.eventb.core.event>
 </org.eventb.core.machineFile>
